@@ -1,0 +1,88 @@
+body
+{
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #333;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root
+{
+	--light-c: rgb(232, 94, 94);
+	--dark-c: #111;
+	--text-shadow: 5px 2px 2px rgba(0,0,0,0.8);
+}
+h1
+{
+	color:rgb(230, 225, 225);
+	margin: 40px 5px 20px 5px;
+	font-size: 25px;
+	text-shadow: var(--text-shadow);
+}
+
+h1 span
+{	background-color: white;
+	color: var(--light-c);
+	padding: 0px 45px;
+	
+}
+
+label
+{
+	color: rgb(230, 225, 225);
+	margin-right: 15px;
+}
+
+.container
+{
+	margin-top: 20px;
+	width: 350px;
+	height: 350px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.8);
+
+
+}
+.element
+{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-shadow:0 0 10px 2px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	text-shadow: 0 0 2px black;
+	font-size: 18px;
+
+
+}
+
+.element:hover
+{
+	cursor: pointer;
+	/* ! This is the new thing for me */
+	box-shadow: inset 0 0 100px 5px var(--dark-c); 
+}
+#SelectColor
+{
+	color: darkblue;
+	text-decoration: none;
+	text-shadow: none;
+
+}
+.form_container
+
+{
+	margin-top: 45px;
+}
